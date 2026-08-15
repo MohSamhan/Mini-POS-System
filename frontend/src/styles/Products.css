@@ -1,0 +1,212 @@
+/* ================= PAGE BACKGROUND ================= */
+.products-container {
+  padding: 30px;
+  background: #f4f7fc;
+  min-height: 100vh;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= TITLE ================= */
+.products-container h1 {
+  font-size: 30px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* ================= SEARCH ================= */
+.products-container input[type="text"] {
+  width: 100%;
+  max-width: 360px;
+
+  padding: 14px 16px;
+
+  border: none;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 20px;
+
+  outline: none;
+
+  display: block;
+}
+
+/* ================= FORM CARD ================= */
+.products-form {
+  background: white;
+  padding: 20px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+.products-form input {
+  padding: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  width: 100%;
+}
+
+.products-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* ================= BUTTON BASE ================= */
+.products-form button {
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+
+  width: 100%;
+}
+
+/* ================= PRIMARY BUTTON ================= */
+.products-form button[type="submit"] {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+}
+
+.products-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= CANCEL BUTTON ================= */
+.products-form button[type="button"] {
+  background: #ef4444;
+  color: white;
+}
+
+.products-form button[type="button"]:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* ================= TABLE CARD ================= */
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= HEADER ================= */
+.products-table thead {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.products-table th {
+  padding: 16px;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ================= ROWS ================= */
+.products-table td {
+  padding: 14px;
+
+  border-bottom: 1px solid #eef2f7;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+/* ================= HOVER ================= */
+.products-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.products-table tbody tr:hover {
+  background: #f1f5f9;
+  transform: scale(1.01);
+}
+
+/* ================= ACTION BUTTONS ================= */
+.products-table button {
+  padding: 7px 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  margin-right: 6px;
+
+  font-size: 13px;
+
+  transition: 0.2s;
+}
+
+/* EDIT */
+.products-table button:first-child {
+  background: #3b82f6;
+  color: white;
+}
+
+.products-table button:first-child:hover {
+  background: #2563eb;
+}
+
+/* DELETE */
+.products-table button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+.products-table button:last-child:hover {
+  background: #dc2626;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .products-form {
+    grid-template-columns: 1fr;
+  }
+
+  .products-container input[type="text"] {
+    width: 100%;
+  }
+
+  .products-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,135 @@
+
+/* ================= CONTAINER ================= */
+.reports-container {
+  padding: 28px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial;
+  color: #0f172a;
+}
+
+/* ================= HEADER ================= */
+.reports-header h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.reports-header p {
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ================= KPI GRID ================= */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* KPI CARD */
+.kpi-card {
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+  transition: 0.25s;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+}
+
+.kpi-card h4 {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.kpi-card h2 {
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+/* COLORS */
+.blue { background: linear-gradient(135deg,#3b82f6,#60a5fa); }
+.purple { background: linear-gradient(135deg,#6366f1,#a855f7); }
+.green { background: linear-gradient(135deg,#22c55e,#10b981); }
+.orange { background: linear-gradient(135deg,#f59e0b,#f97316); }
+.profit { background: linear-gradient(135deg,#111827,#374151); }
+
+/* ================= REPORT GRID ================= */
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* CARD */
+.report-card {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+}
+
+.report-card h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* PRODUCT ROW */
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  background: #f8fafc;
+  border-radius: 10px;
+
+  margin-bottom: 8px;
+
+  transition: 0.2s;
+}
+
+.product-row:hover {
+  background: #eef2ff;
+}
+
+/* BADGE */
+.badge {
+  background: #4f46e5;
+  color: white;
+
+  padding: 4px 10px;
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+/* EMPTY TEXT */
+.empty {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .kpi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+}

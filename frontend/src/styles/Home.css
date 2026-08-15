@@ -1,0 +1,258 @@
+
+/* ================= CONTAINER ================= */
+.home-container {
+  display: flex;
+  min-height: 100vh;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  background: linear-gradient(135deg, #f1f5f9, #eef2ff);
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 250px;
+
+  background: #0f172a;
+  color: white;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* SIDEBAR BUTTONS */
+.sidebar button {
+  background: transparent;
+  border: none;
+
+  color: #cbd5e1;
+
+  text-align: left;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  font-size: 14px;
+}
+
+.sidebar button:hover {
+  background: #1e293b;
+  color: white;
+
+  transform: translateX(5px);
+}
+
+/* LOGOUT */
+.logout {
+  margin-top: auto;
+
+  background: #ef4444 !important;
+  color: white !important;
+
+  font-weight: 600;
+}
+
+.logout:hover {
+  background: #dc2626 !important;
+}
+
+/* ================= MAIN ================= */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+  margin-bottom: 20px;
+
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.topbar p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* USER BADGE */
+.user-badge {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+/* ================= KPI CARDS ================= */
+.card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+  transition: 0.25s ease;
+
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card h4 {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.card h2 {
+  margin: 8px 0;
+  font-size: 22px;
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+/* ================= ACTION GRID ================= */
+.action-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+.action-card {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.action-card:hover {
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .card-grid,
+  .action-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .home-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .sidebar button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  .card-grid,
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
