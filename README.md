@@ -25,3 +25,16 @@
 ## 👨‍💻 Developer
 Moh Samhan
 
+Mini-POS-System/
+├── backend/
+├── frontend/
+├── Screenshots/
+│   ├── Customer Page.png
+│   ├── Dashboard.png
+│   ├── Mini POS Login.png
+│   ├── Products Page.png
+│   ├── Receipt.png
+│   ├── Report.png
+│   └── Sales Page.png
+├── .gitignore
+└── README.md 
